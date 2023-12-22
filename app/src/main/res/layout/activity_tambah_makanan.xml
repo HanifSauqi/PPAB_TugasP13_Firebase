@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="26sp"
+    tools:context=".admin.TambahItemActivity">
+
+    <EditText
+        android:id="@+id/txt_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan nama"
+        android:background="@drawable/edittext_bottom_border"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="8dp"
+        />
+    <Spinner
+        android:id="@+id/spinner_kategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="8dp"
+        android:layout_marginVertical="16dp"
+        />
+    <EditText
+        android:id="@+id/txt_jml_kalori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah Kalori"
+        android:background="@drawable/edittext_bottom_border"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="8dp"
+        />
+    <Button
+        android:id="@+id/btn_tambah_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Item"
+        android:backgroundTint="#00296B"
+        android:layout_marginTop="16dp"
+        />
+
+
+</LinearLayout>

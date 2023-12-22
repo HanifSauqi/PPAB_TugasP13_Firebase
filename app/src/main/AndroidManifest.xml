@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +14,28 @@
         android:theme="@style/Theme.LatihanP12_Firebase"
         tools:targetApi="31">
         <activity
+            android:name=".user.DataDiriActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.TambahCustomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.CustomItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.TambahKaloriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.TambahItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,8 +48,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>
